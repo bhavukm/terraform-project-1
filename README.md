@@ -47,12 +47,32 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
    B. No need to install the amazon-ssm-agent if you are using Amazon Linux AMI, as it is pre-installed. For other AMIs, refer to: https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html
 
-   8. SSH to your bastion host and follow the instructions below:
+   8. SSH to your bastion host and follow the instructions below (commands highlighted in _Italic font_):
 
       (A). Become root: sudo su -
 
-      (B). Create a directory: mkdir terraform
+      (B). Create a directory: _mkdir terraform_
 
-      (C). cd to the new directory: cd terraform
+      (C). cd to the new directory: _cd terraform_
 
-      (D). Create the main.tf file: vim main.tf
+      (D). Create the main.tf file: _vim main.tf_(file is available in this repo - **please fill out the placeholders in the file - MANDATORY STEP**)
+
+      (E). Initiate Terraform backend: _terraform init_
+
+      (F). Check Terraform syntax: _terraform validate_
+
+      (G). Perform a dry run to confirm Terraform resources that will be created: _terraform plan_
+
+      (H). Create Terraform resources: _terraform apply_
+
+   9. Head over to your AWS Management console to see the created project resources.
+
+   10. Copy the LB DNS and try accessing the website on a browser. Test if it loads.
+
+   11. Please confirm the AWS SNS Topic subscription by checking your email. This will ensure that you receive the CloudWatch Alarm-based alert email.
+
+   12. SSH into one of the 2 EC2 instances from the AutoScaling Group via AWS Session Manager and then run the following commands to stress out CPU utilization.
+
+   13. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
+
+       **This completes the project successfully**
