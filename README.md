@@ -21,7 +21,7 @@ Resources that should be provisioned before using the Terraform script:
 
 2. An IAM Role is attached to the Bastion Host with "Administrator" access. For help with IAM Role creation, see the following YouTube Video: https://youtu.be/TF9oisb1QJQ
 
-3. AWS CLI configured on the Bastion Host (In case we need it. Amazon Linux AMI already has AWS CLI installed, so no need if you use that AMI).
+3. AWS CLI configured on the Bastion Host (In case we need it. Amazon Linux AMI already has AWS CLI installed, so no need to install or configure if you use that AMI).
 
 4. The AMI ID should already be available to be used with the Launch Template. I am keeping it separate from the Terraform project so that when I destroy the project (terraform destroy) the AMI is still available as I use it with different projects. If help required to create this AMI, please refer:
 
