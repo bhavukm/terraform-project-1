@@ -13,7 +13,7 @@ AWS EC2 Instance Creation (with Terraform script) and Terraform Installation: ht
 
 The entire AWS Project Deployed Manually from UI: https://youtu.be/dMUQTQS1l3g
 
-Steps to use the Terraform script to automatically deploy the infrastructure:
+**Steps to use the Terraform script to automatically deploy the infrastructure:**
 
 Resources that should be provisioned before using the Terraform script:
 
