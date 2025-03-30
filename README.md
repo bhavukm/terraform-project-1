@@ -39,7 +39,7 @@ YouTube Video: https://youtu.be/FOHXylL8e2Q
 
 6. The infrastructure is deployed in a default VPC and subnets that are available per region (in this case, us-east-1) in an AWS account.
 
-7. An IAM role (for enabling AWS Session Manager) that will be associated with the 2 AWS EC2 Instances that will be part of the ASG, hosting the static Apache website. Again, keeping it separate as I use it in other projects as well.
+7. An IAM role (for enabling AWS Session Manager) that will be associated with the 2 AWS EC2 Instances that will be part of the LT and ASG, hosting the static Apache website. Again, keeping it separate as I use it in other projects as well.
 
 Please follow the below steps to configure AWS Session Manager on an AWS EC2 Instance:
 
