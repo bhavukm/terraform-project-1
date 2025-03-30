@@ -17,7 +17,7 @@ The entire AWS Project Deployed Manually from UI: https://youtu.be/dMUQTQS1l3g
 
 Resources that should be provisioned before using the Terraform script:
 
-1. An AWS Account with a Bastion Host (EC2 with Amazon Linux 2023 OS) where Terraform is installed and configured.
+1. An AWS Account with a Bastion Host (EC2 with Amazon Linux 2023 OS) where Terraform is installed and configured. An AWS SSH keypair named "kp".
 
 2. An IAM Role is attached to the Bastion Host with "Administrator" access. For help with IAM Role creation, see the following YouTube Video: https://youtu.be/TF9oisb1QJQ
 
@@ -39,7 +39,7 @@ YouTube Video: https://youtu.be/FOHXylL8e2Q
 
 6. The infrastructure is deployed in a default VPC and subnets that are available per region (in this case, us-east-1) in an AWS account.
 
-7. An IAM role (for enabling AWS Session Manager) that will be associated with the 2 AWS EC2 Instances that will be part of the LT and ASG, hosting the static Apache website. Again, keeping it separate as I use it in other projects as well.
+7. An IAM role (for enabling AWS Session Manager) that will be associated with the 2 AWS EC2 Instances that will be part of the LT and ASG, hosting the static Apache website. Again, keeping it separate as I use it in other projects as well. Name the IAM role as: ec2-ssm
 
 Please follow the below steps to configure AWS Session Manager on an AWS EC2 Instance:
 
@@ -55,7 +55,9 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
       (C). cd to the new directory: _cd terraform_
 
-      (D). Create the main.tf file: _vim main.tf_(file is available in this repo - **please fill out the placeholders in the file - MANDATORY STEP**)
+      (D). Create the main.tf file: _vim main.tf_(file is available in this repo - **please fill out the 5 placeholders in the file - MANDATORY STEP**)
+
+      5 Placeholders: your-ami-id, LT-security-group-id, your-email-id, alb-security-group-id, your-vpc-id
 
       (E). Initiate Terraform backend: _terraform init_
 
@@ -65,14 +67,14 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
       (H). Create Terraform resources: _terraform apply_
 
-   9. Head over to your AWS Management console to see the created project resources.
+   10. Head over to your AWS Management console to see the created project resources.
 
-   10. Copy the LB DNS and try accessing the website on a browser. Test if it loads.
+   11. Copy the LB DNS and try accessing the website on a browser. Test if it loads.
 
-   11. Please confirm the AWS SNS Topic subscription by checking your email. This will ensure that you receive the CloudWatch Alarm-based alert email.
+   12. Please confirm the AWS SNS Topic subscription by checking your email. This will ensure that you receive the CloudWatch Alarm-based alert email.
 
-   12. SSH into one of the 2 EC2 instances from the AutoScaling Group via AWS Session Manager and then run the following commands to stress out CPU utilization.
+   13. SSH into one of the 2 EC2 instances from the AutoScaling Group via AWS Session Manager and then run the following commands to stress out CPU utilization.
 
-   13. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
+   14. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
 
        **This completes the project successfully**
