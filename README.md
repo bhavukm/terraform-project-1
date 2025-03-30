@@ -23,7 +23,9 @@ Resources that should be provisioned before using the Terraform script:
 
 3. AWS CLI configured on the Bastion Host (In case we need it. Amazon Linux AMI already has AWS CLI installed, so no need to install or configure if you use that AMI).
 
-4. The AMI ID should already be available to be used with the Launch Template. I am keeping it separate from the Terraform project so that when I destroy the project (terraform destroy) the AMI is still available as I use it with different projects. If help required to create this AMI, please refer:
+4. The AMI ID should already be available to be used with the Launch Template. I am keeping it separate from the Terraform project so that when I destroy the project (terraform destroy), the AMI is still available
+
+as I use it with different projects. If help is required to create this AMI, please refer:
 
 YouTube Video: https://youtu.be/FOHXylL8e2Q
 
@@ -31,6 +33,8 @@ or
 
 GitHub Repo: https://github.com/bhavukm/webapp-asg-alb.git
 
-7. The Security Groups for the LT and ALB should already be available. The reason for doing that is the same as in point number 4.
+5. The Security Groups for the LT and ALB should already be available. The reason for doing that is the same as in point number 4. If you need help with the creation of Security Groups, please refer to:
 
-8. The infrastructure is deployed in a default VPC and subnets that are available per region (in this case, us-east-1) in an AWS account.
+YouTube Video: https://youtu.be/FOHXylL8e2Q
+
+6. The infrastructure is deployed in a default VPC and subnets that are available per region (in this case, us-east-1) in an AWS account.
