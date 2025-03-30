@@ -5,20 +5,18 @@ Automating AWS Infrastructure with Terraform. This project deploys a Web Applica
 
 ![image](https://github.com/user-attachments/assets/c65bda41-84be-45b6-bb74-74add555c2b9)
 
-
-Steps to use the Terraform script to automatically deploy the infrastructure:
-
-Resources that should be provisioned before using the Terraform script:
-
-1. An AWS Account with a Bastion Host (EC2 with Amazon Linux 2023 OS) where Terraform is installed and configured.
-
-**YouTube Videos on:**
+**Knowledge of concepts that are required before this video have been covered in my earlier YouTube Videos, do check these out:**
 
 AWS EC2 Instance Creation (Manually from UI): https://youtu.be/FOHXylL8e2Q
 
 AWS EC2 Instance Creation (with Terraform script) and Terraform Installation: https://youtu.be/JkxB_d8XLN8
 
 The entire AWS Project Deployed Manually from UI: https://youtu.be/dMUQTQS1l3g
+Steps to use the Terraform script to automatically deploy the infrastructure:
+
+Resources that should be provisioned before using the Terraform script:
+
+1. An AWS Account with a Bastion Host (EC2 with Amazon Linux 2023 OS) where Terraform is installed and configured.
 
 2. An IAM Role is attached to the Bastion Host with "Administrator" access. For help with IAM Role creation, see the following YouTube Video: https://youtu.be/TF9oisb1QJQ
 
