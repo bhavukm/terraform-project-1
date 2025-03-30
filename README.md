@@ -46,3 +46,13 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
    A. Create an IAM Role for EC2 Instance and attach 𝙰𝚖𝚊𝚣𝚘𝚗𝚂𝚂𝙼𝙼𝚊𝚗𝚊𝚐𝚎𝚍𝙸𝚗𝚜𝚝𝚊𝚗𝚌𝚎𝙲𝚘𝚛𝚎 IAM policy to the role.
 
    B. No need to install the amazon-ssm-agent if you are using Amazon Linux AMI, as it is pre-installed. For other AMIs, refer to: https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html
+
+   8. SSH to your bastion host and follow the instructions below:
+
+      (A). Become root: sudo su -
+
+      (B). Create a directory: mkdir terraform
+
+      (C). cd to the new directory: cd terraform
+
+      (D). Create the main.tf file: vim main.tf
