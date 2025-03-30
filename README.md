@@ -78,3 +78,5 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
    14. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
 
        **This completes the project successfully**
+
+   15. Destroy all terraform resources: _terraform destroy_
