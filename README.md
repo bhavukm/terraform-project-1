@@ -3,6 +3,9 @@ Automating AWS Infrastructure with Terraform. This project deploys a Web Applica
 
 **YouTube Video URL:**
 
+![image](https://github.com/user-attachments/assets/c65bda41-84be-45b6-bb74-74add555c2b9)
+
+
 Steps to use the Terraform script to automatically deploy the infrastructure:
 
 Resources that should be provisioned before using the Terraform script:
