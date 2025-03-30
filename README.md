@@ -38,3 +38,11 @@ GitHub Repo: https://github.com/bhavukm/webapp-asg-alb.git
 YouTube Video: https://youtu.be/FOHXylL8e2Q
 
 6. The infrastructure is deployed in a default VPC and subnets that are available per region (in this case, us-east-1) in an AWS account.
+
+7. An IAM role (for enabling AWS Session Manager) that will be associated with the 2 AWS EC2 Instances that will be part of the ASG, hosting the static Apache website. Again, keeping it separate as I use it in other projects as well.
+
+Please follow the below steps to configure AWS Session Manager on an AWS EC2 Instance:
+
+   A. Create an IAM Role for EC2 Instance and attach 𝙰𝚖𝚊𝚣𝚘𝚗𝚂𝚂𝙼𝙼𝚊𝚗𝚊𝚐𝚎𝚍𝙸𝚗𝚜𝚝𝚊𝚗𝚌𝚎𝙲𝚘𝚛𝚎 IAM policy to the role.
+
+   B. No need to install the amazon-ssm-agent if you are using Amazon Linux AMI, as it is pre-installed. For other AMIs, refer to: https://docs.aws.amazon.com/systems-manager/latest/userguide/manually-install-ssm-agent-linux.html
