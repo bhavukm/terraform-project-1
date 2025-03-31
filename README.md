@@ -75,8 +75,12 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
    13. SSH into one of the 2 EC2 instances from the AutoScaling Group via AWS Session Manager and then run the following commands to stress out CPU utilization.
 
-   14. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
+       yum install stress -y
+
+       stress --cpu 1 --timeout 800 &
+
+   15. Head over to your ASG Instances section and check if a new EC2 Instance has been created. Also, check your email if you received the alert.
 
        **This completes the project successfully**
 
-   15. Destroy all terraform resources: _terraform destroy_
+   16. Destroy all terraform resources: _terraform destroy_
