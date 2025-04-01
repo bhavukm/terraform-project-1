@@ -59,6 +59,8 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
       7 Placeholders (subnet-id-1 and subnet-id-2 are at 2 places): your-ami-id, LT-security-group-id, your-email-id, alb-security-group-id, your-vpc-id, subnet-id-1, subnet-id-2
 
+      Note: You may use Terraform variables for all the placeholders.
+
       (E). Initiate Terraform backend: _terraform init_
 
       (F). Check Terraform syntax: _terraform validate_
