@@ -55,7 +55,7 @@ Please follow the below steps to configure AWS Session Manager on an AWS EC2 Ins
 
       (C). cd to the new directory: _cd terraform_
 
-      (D). Create the main.tf file: _vim main.tf_(file is available in this repo - **please fill out the 7 placeholders in the file - MANDATORY STEP**)
+      (D). Create the main.tf file: _vim main.tf_ (file is available in this repo - **please fill out the 7 placeholders in the file - MANDATORY STEP**)
 
       7 Placeholders (subnet-id-1 and subnet-id-2 are at 2 places): your-ami-id, LT-security-group-id, your-email-id, alb-security-group-id, your-vpc-id, subnet-id-1, subnet-id-2
 
