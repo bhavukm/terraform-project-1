@@ -1,7 +1,7 @@
 # tf-aws-asg-lb-cw
 Automating AWS Infrastructure with Terraform. This project deploys a Web Application on AWS EC2 Instances as part of an AutoScaling Group (ASG). The AutoScaling Group is integrated with an Application Load Balancer (ALB) and a Launch template (LT). The LT utilizes a custom AWS AMI (Amazon Machine Image) that already has a static website code with an Apache web server configured. The ASG also has a Dynamic Scaling policy to increase the number of instances in the ASG automatically when the Average CPU Utilization of the ASG breaches the threshold of 40 percent. The scaling event is triggered via a CloudWatch Alarm that also sends an AWS SNS (Simple Notification Service) -based Email to the users.
 
-**YouTube Video URL:**
+**YouTube Video URL:** https://youtu.be/ThEk09lV0vo
 
 ![image](https://github.com/user-attachments/assets/c65bda41-84be-45b6-bb74-74add555c2b9)
 
