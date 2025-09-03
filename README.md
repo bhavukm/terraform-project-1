@@ -10,7 +10,7 @@ Resources that should be provisioned before using the Terraform script:
 
 1. An AWS Account with a Bastion Host (EC2 with Amazon Linux 2023 OS) where Terraform is installed and configured. An AWS SSH keypair named "kp".
 
-2. An IAM Role is attached to the Bastion Host with "Administrator" access. For help with IAM Role creation, see the following YouTube Video: https://youtu.be/TF9oisb1QJQ
+2. An IAM Role is attached to the Bastion Host with "Administrator" access.
 
 3. AWS CLI configured on the Bastion Host (In case we need it. Amazon Linux AMI already has AWS CLI installed, so no need to install or configure if you use that AMI).
 
