@@ -1,0 +1,9 @@
+aws_region           = "us-east-1"
+vpc_id               = "vpc-0f7733b1a2b254edc"
+subnet_ids           = ["subnet-0cd46a47bfcd516bb", "subnet-0d0078a74545cf987"]
+security_group_ids   = ["sg-083ea27d736ab4e7c"]
+ami_id               = "ami-0038ef638f9298e73"
+instance_type        = "t2.micro"
+key_name             = "train"
+iam_instance_profile = "admin-role"
+notification_email   = "techapricate@gmail.com"
